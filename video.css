@@ -1,0 +1,81 @@
+
+video{
+    height: 100vh;
+    margin-top: 100px;
+    overflow: hidden auto;
+    padding: 15px 10%;
+    /* position: fixed; */
+    display:flex;
+    max-width: 1794px;
+     width: 104%;
+    
+ }
+
+ .video-text {
+    position: absolute;
+
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 102%;
+    font-size: large;
+    text-align: center;
+    font-family: 'myfirstfont';
+    
+}
+.video-text h2{
+  font-size: 45px;
+  font-weight: 50;
+  margin-bottom: 10px;
+  font-family: 'my2ndfont';
+  margin-left: 40px;
+}
+.video-text p{
+  font-size: 16px;
+  font-family: 'my2ndfont';
+  font-weight: 50;
+  color: #FFFFFF;
+}
+.video-text i{
+ font-size: 46px;
+ margin-bottom: 9px;
+}
+
+.nimya{
+  display: flex;
+  left: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+  position: relative;
+  justify-items: center;
+}
+.nimya span{
+  width: 1.5px;
+  height: 50px;
+  background:#FFFFFF;
+  
+  }
+.brandText{
+  text-align: center;
+  font-family: 'myfirstfont';
+  font-size: 10px;
+  color: #6F6F6F;
+  opacity: 1;
+  letter-spacing: -0.32px;
+  margin-top: 16px;
+  line-height: 1.3rem;
+
+}
+.brandText h1{
+  font-size: 35px;
+  margin: 35px 20px;
+  color: #138FE4;
+  font-family: 'myfirstfont';
+  letter-spacing: -1.2px;
+  opacity: 1;
+}
