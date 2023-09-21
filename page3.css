@@ -1,0 +1,380 @@
+*{     /*  nav heading */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'myfirstfont';
+  
+  }
+  
+  body{
+    background-color: #F8F8F8;
+    
+  }
+  .container {
+    max-width: 1794px;
+    width: 95%;
+    margin: auto;
+    padding-left: 3%;
+    overflow: hidden;
+  }
+ 
+  
+  .first-section{
+    height: 100%;
+    width: 88%;
+    overflow: hidden;
+    position: relative;
+    margin-left: 75px;
+  }
+  @font-face {
+    font-family: 'myfirstfont';
+    src: url("./Fonts/fonts/MaisonNeue-Medium.ttf");
+    
+   /*  src: url("./Fonts/fonts/Helvetica-reg.ttf");
+    src: url("./Fonts/fonts/helveticaNeue-Med.ttf"); */
+    font-style: normal;
+    font-weight: 100;
+   }
+   @font-face {
+    font-family: 'my2ndfont';
+    src: url("./Fonts/fonts/MaisonNeue-Light.ttf");
+   }
+  @font-face{font-family: 'my3rdfont';
+    src: url("./Fonts/fonts/MaisonNeue-Book.ttf");
+  
+  }
+  @font-face {
+    font-family: 'my4thfont';
+    src: url("./Fonts/fonts/MaisonNeue-Bold.ttf");
+  }
+  @font-face {
+    font-family: 'my5thfont';
+    src: url("./Fonts/fonts/Helvetica-reg.ttf");
+  }
+  @font-face {
+    font-family: 'my6thfont';
+    src: url("./Fonts/fonts/MaisonNeue-Demi.ttf");
+  }
+
+
+  .new{
+    margin-top: 16px;
+    padding: 13px;
+    font-family: 'my4thfont';
+    justify-content: center;
+    align-items: center;
+    padding-left: 29px;
+    position: relative;
+    display: grid;
+    text-transform: uppercase;
+    color: #C1C1C1;
+  }
+  .first-section h1{
+    position: absolute;
+    top: 48%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-align: center;
+    font-family: 'myfirstfont';
+    
+}
+
+.first-section p{
+ font-size: 39px;
+ font-weight: 50px;
+  
+}
+
+.bestsellers{
+  padding: 2px ;
+  margin: auto;
+  margin-top: 31px;
+  width: 90%;
+  overflow: visible !important;
+ 
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,  auto));
+  gap: 1rem;
+}
+
+.product-text {
+    margin-top: 10px; 
+    display: flex;
+    justify-content: space-between;
+ }
+.heart-icon{
+display: flex;
+flex-flow: row-reverse;
+font-size: 20px;
+  }
+
+.row{
+  position: relative;
+  transition: all .40s;
+}
+
+.row img  {
+  width: 260px;
+  height: 290px;
+  transition: all .40s;
+  box-shadow: 0px 0px 6px #0000000D; 
+}
+.heart-icon{
+  display: flex;
+  flex-flow: row-reverse;
+  font-size: 20px;
+  
+  }
+  .heart{
+    scale: .8;
+    
+  }
+.heart:hover{
+    fill:  #DD645E;
+ /*  background-color:#DD645E ; */
+}
+.heart-icon svg:hover>path {
+  fill: #DD645E !important;
+}
+  .bestsellers span{
+    height: .5px;
+    width: 95%;
+    background-color: #000;
+    columns: #000;
+  }
+  .slider-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+   
+
+   .left_arrow {
+       position: relative;
+       display: flex;
+       top: 227px;
+       right: 27px;
+       align-items: center;
+       cursor: pointer;
+       z-index: 10;
+   }
+
+.left_arrow i{
+    font-size: 46px;
+    /* color: #000; */
+    border: 2px solid #000;
+    border-radius: 50%;
+    border: none;
+
+}
+ .right-arrow {
+            position: relative;
+            display: flex;
+            top: 227px;
+            left: 24px;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+
+        }
+
+.right-arrow i {
+            font-size: 46px;
+            fill: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+            border: none;
+            
+        }
+        .right-arrow-dark{
+          position: relative;
+            display: flex;
+            top: 227px;
+            left: 37px;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+  .right-arrow-dark i{
+    font-size: 46px;
+    fill: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    margin-right: 23px;
+        
+}
+
+.ratting{
+  display: flex;
+  font-size: 9px;
+  scale: .9;
+  margin-inline: -15px;
+  margin-top: -1px;
+  margin-left: -15px;
+}
+.ratting p{
+margin-left: 4px;
+letter-spacing: 1.2px;
+scale: .9;
+
+}
+.price h6{
+  font-size: 7px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+  line-height: 12px;
+  margin-left: 1px;
+  }
+/* IMG */
+
+.coverImg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 6%;
+
+}
+
+.coverImg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 112px;
+}
+
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.landing-text {
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 53%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-text-heading {
+  font-size: 80px;
+  font-family: 'my4thfont';
+  text-transform: uppercase;
+  color: #f5eded;
+  font-weight: bold;
+  
+}
+
+.utlimateSelf {
+  display: flex;
+  justify-content: flex-start;
+  line-height: 100%;
+}
+
+.careRoutine {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 100%;
+}
+
+.landing-text-description {
+  font-size: 16.5px;
+  font-family: 'my2ndfont';
+  text-align: center;
+  margin-top: 15px;
+  color: #FFFFFF;
+  margin-right: 50px;
+  font-weight: lighter;
+  opacity: 80%;
+}
+
+.product-category {
+padding: 3% 0;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.product-tab {
+border-bottom: none;
+display: flex;
+}
+
+.product-tab li {
+list-style: none;
+}
+
+
+
+.product-tab li a {
+color: #c1c1c1 !important;
+text-transform: uppercase;
+padding: 3px 20px 0 20px;
+font-size: 20px;
+font-family: 'my4thfont';
+text-decoration: none;
+}
+.product-tab li span{
+display: inline-flex;
+width: 3px;
+height: 15px;
+background-color: #c1c1c1;
+}
+
+
+.product-tab a:hover {
+
+color: #000 !important;
+
+}
+
+.product-tab a.active {
+color: #000 !important;
+}
+
+.product-tab li a:active {
+color: #000 !important;
+content: none;
+}
+
+
+
+
+  /* HEADING */
+
+  .heading{
+    color: #000000;
+    /* background-color: #F8F8F8; */
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: flex;
+  }
+
+  /* PICTURE */
+  .picture{
+    height: 280px;
+    width: 250px;
+    display: flex;
+    margin-top: 60px;
+
+  }

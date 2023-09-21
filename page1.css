@@ -40,7 +40,10 @@ body{
   font-family: 'my4thfont';
   src: url("./Fonts/fonts/MaisonNeue-Bold.ttf");
 }
-
+@font-face {
+  font-family: 'my5thfont';
+  src: url("./Fonts/fonts/Helvetica-reg.ttf");
+}
 
  .product-nav{
     background-color: #000;
@@ -130,6 +133,7 @@ body{
   margin: auto;
   margin-top: 12px;
   width: 90%;
+  overflow: visible !important;
  
 }
 .products{
@@ -246,18 +250,88 @@ font-size: 20px;
 .heart-icon{
   display: flex;
   flex-flow: row-reverse;
+  font-size: 20px;
+  
   }
-.heart-icon:hover{
-  color: #DD645E ;
+  .heart{
+    scale: .8;
+    
+  }
+.heart:hover{
+    fill:  #DD645E;
  /*  background-color:#DD645E ; */
 }
-
+.heart-icon svg:hover>path {
+  fill: #DD645E !important;
+}
   .bestsellers span{
     height: .5px;
     width: 95%;
     background-color: #000;
     columns: #000;
   }
+  .slider-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+   
+
+   .left_arrow {
+       position: relative;
+       display: flex;
+       top: 227px;
+       right: 27px;
+       align-items: center;
+       cursor: pointer;
+       z-index: 10;
+   }
+
+.left_arrow i{
+    font-size: 46px;
+    /* color: #000; */
+    border: 2px solid #000;
+    border-radius: 50%;
+    border: none;
+
+}
+ .right-arrow {
+            position: relative;
+            display: flex;
+            top: 227px;
+            left: 24px;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+
+        }
+
+.right-arrow i {
+            font-size: 46px;
+            fill: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+            border: none;
+            
+        }
+        .right-arrow-dark{
+          position: relative;
+            display: flex;
+            top: 227px;
+            left: 37px;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+  .right-arrow-dark i{
+    font-size: 46px;
+    fill: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    margin-right: 23px;
+        }
 .ratting{
   display: flex;
   font-size: 9px;
@@ -318,7 +392,9 @@ margin-left: 1px;
     
   }
   .right-text-dark {
+    width: 100%;
     color: #000;
+    display: flex;
     font-size: 28px;
     text-transform: capitalize;
     text-align: center;
@@ -326,16 +402,17 @@ margin-left: 1px;
     scale: .9;
 
 }
-
-.bestsellers-dark {
-   color: white;
-   background-color: #000;
-    padding: 20px;
-    margin: auto;
-    margin-top: 12px;
-    width: 90%;
-    font: normal normal medium 12px/30px Maison Neue;
-}
+  .bestsellers-dark {
+    color: white;
+    background-color: #000;
+     margin: auto;
+     margin-top: 12px;
+     width: 100%;
+     overflow: hidden;
+     padding-right: 41px;
+     padding-left: 61px;
+     font: normal normal medium 12px/30px Maison Neue;
+ }
 
 .bestsellers-dark i {
     display: flex;
@@ -349,10 +426,9 @@ margin-left: 1px;
 }
 .right-text-dark p{
   color: #FFFFFF;
-  margin: 3%;
+  margin: 3%  39%;
   font-family: 'my4thfont';
-  margin-top: 7px;
-
+  margin-top: -28px;
 }
 
 
@@ -362,9 +438,9 @@ margin-left: 1px;
 }
 
 .row-dark img {
-   margin-left: 14px;
-       width: 250px;
-       height: 320px;
+   margin-left: 6px;
+       width: 264px;
+       height: 278px;
        transition: all .40s;
 }
 
@@ -424,3 +500,534 @@ margin-top: 7px;
 line-height: 12px;
 margin-left: 8px;
 }
+
+
+
+
+/* responsive css */
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px){
+  .products{
+    position: relative;
+    display: flex;
+  }
+  .row {
+    display: block;
+    transition: all .40s;
+  }
+    
+    
+    
+     
+    
+    
+    
+      
+   
+    
+      
+  
+  
+  
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1200px){
+    .container{
+      height: auto;
+    
+    }
+   
+    .products {
+      position: relative;
+     
+    }
+    .row {
+      
+         display:block;
+         width: 100%;
+        
+      }
+  
+      .row img{
+         width: 100%;
+         height: 200px;
+         object-fit: cover;
+         object-position: center;
+         transition: all .40s;
+       }
+           .img1 img:hover {
+             content: url(./images/signup/shopCategory/category_threeHov.jpg);
+             width: 100%;
+             height: 200px;
+  
+            
+           }
+      
+           .img2 img:hover {
+             content: url(./images/ambassadorPage/artists/artist-one.jpg);
+             width: 100%;
+            height: 200px;
+           }
+      
+           .img3 img:hover {
+             content: url(./images/brandDetails/brandpagebg.jpg);
+            width: 100%;
+            height: 200px;
+             
+           }
+      
+           .img4 img:hover {
+             content: url(./images/reviewSlider/revImg_four.jpg);
+              width: 100%;
+              height: 200px;
+            
+           }
+      
+           .img5 img:hover {
+             content: url(./images/signup/shopCategory/category_threeHov.jpg);
+              width: 100%;
+              height: 200px;
+            
+           }
+      
+           .img6 img:hover {
+             content: url(./images/brandDetails/brandpagebg.jpg);
+            width: 100%;
+            height: 200px;
+            
+           }
+      
+           .img7 img:hover {
+             content: url(./images/reviewSlider/revImg_four.jpg);
+              width: 100%;
+              height: 200px;
+             
+           }
+      
+           .img8 img:hover {
+             content: url(./images/ambassadorPage/artists/artist-one.jpg);
+              width: 100%;
+              height: 200px;
+            
+           }
+      
+           .img9 img:hover {
+             content: url(./images/ambassadorPage/artists/artist-one.jpg);
+              width: 100%;
+              height: 200px;
+            
+           }
+      
+           .img10 img:hover {
+             content: url(./images/reviewSlider/revImg_seven.jpg);
+            width: 100%;
+            height: 200px;
+            
+           }
+      
+           .img11 img:hover {
+             content: url(./images/reviewSlider/revImg_four.jpg);
+          width: 100%;
+          height: 200px;
+            
+           }
+      
+           .img12 img:hover {
+             content: url(./images/brandDetails/brandpagebg.jpg);
+            width: 100%;
+            height: 200px;
+            
+           }
+      
+           .img13 img:hover {
+             content: url(./images/reviewSlider/revImg_seven.jpg);
+            width: 100%;
+            height: 200px;
+            
+           }
+      
+           .img14 img:hover {
+             content: url(./images/reviewSlider/revImg_four.jpg);
+            width: 100%;
+            height: 200px;
+             
+           }
+      
+           .img15 img:hover {
+             content: url(./images/brandDetails/brandpagebg.jpg);
+            width: 100%;
+            height: 200px;
+             
+           }
+      
+           .img16 img:hover {
+             content: url(./images/ambassadorPage/artists/artist-one.jpg);
+              width: 100%;
+              height: 200px;
+            
+           }
+          .product-text{
+            display: flex;
+          }
+          .product-text p {
+            font-size: 10px;
+           }
+            .ratting {
+                     display: flex;
+                     font-size: 7px;
+                     scale: .9;
+                     margin-inline: -15px;
+                     margin-top: -1px;
+                     margin-left: -8px;
+                   }
+          
+                   .ratting p {
+                     margin-left: 4px;
+                     letter-spacing: 1.2px;
+                     scale: .9;
+          
+                   }
+          
+                   .price h6 {
+                     font-size: 6px;
+                     margin-bottom: 10px;
+                     margin-top: 7px;
+                     line-height: 6px;
+                     margin-left: px;
+                   }
+  
+                   /* bestseller dark */
+              .bestsellers-dark {
+                
+                margin-top: 12px;
+                width: 100%;
+               
+              }
+        
+              .bestsellers-dark i {
+                display: flex;
+                align-self: flex-start;
+              }
+        
+              .products-dark {
+                display: flex;
+                
+              }
+        
+              .right-text-dark p {
+                color: #FFFFFF;
+                margin: 3% 39%;
+                font-family: 'my4thfont';
+                margin-top: -28px;
+              }
+        
+        
+              .row-dark {
+                position: relative;
+                transition: all .40s;
+              }
+        
+              .row-dark img {
+                /* margin-left: 14px; */
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                height: 250px;
+                transition: all .40s;
+              }
+        
+              .product-detail {
+                font-size: 9px;
+                margin-top: 8px;
+                margin-bottom: 10px;
+                margin-left: 7px;
+              }
+        
+            
+        
+              .product-dark p {
+                margin-top: 10px;
+               
+              }
+  
+        
+              
+        
+              .ratting-dark {
+               
+                font-size: 8px;
+               
+              }
+        
+           
+        
+              .price-dark h6 {
+                font-size: 6px;
+                margin-bottom: 10px;
+                margin-top: 7px;
+                line-height: 10px;
+                margin-left: 8px;
+              }
+         
+                  
+            
+                  
+         
+  
+    
+     
+    
+    
+     
+    
+     
+   
+    
+     
+    }
+  @media only screen and (min-width: 320px) and (max-width: 600px){
+        
+      .container {
+          width: 100%;
+         
+        }
+     
+    
+        
+          .products {
+            position: relative;
+            
+          
+        
+        
+        
+          }
+        
+          .row {
+            display: block;
+            transition: all .40s;
+          }
+        
+          
+          .row img {
+  
+             width: 90vw;
+             height: 300px;
+                     object-fit: cover;
+                     object-position: center;
+                     transition: all .40s;
+                   }
+          
+                   .img1 img:hover {
+                     content: url(./images/signup/shopCategory/category_threeHov.jpg);
+                     width: 100vw;
+                     height: 300px;
+          
+          
+                   }
+          
+                   .img2 img:hover {
+                     content: url(./images/ambassadorPage/artists/artist-one.jpg);
+                      width: 90vw;
+                        height: 300px;
+                   }
+          
+                   .img3 img:hover {
+                     content: url(./images/brandDetails/brandpagebg.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img4 img:hover {
+                     content: url(./images/reviewSlider/revImg_four.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img5 img:hover {
+                     content: url(./images/signup/shopCategory/category_threeHov.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img6 img:hover {
+                     content: url(./images/brandDetails/brandpagebg.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img7 img:hover {
+                     content: url(./images/reviewSlider/revImg_four.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img8 img:hover {
+                     content: url(./images/ambassadorPage/artists/artist-one.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img9 img:hover {
+                     content: url(./images/ambassadorPage/artists/artist-one.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img10 img:hover {
+                     content: url(./images/reviewSlider/revImg_seven.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img11 img:hover {
+                     content: url(./images/reviewSlider/revImg_four.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img12 img:hover {
+                     content: url(./images/brandDetails/brandpagebg.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img13 img:hover {
+                     content: url(./images/reviewSlider/revImg_seven.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img14 img:hover {
+                     content: url(./images/reviewSlider/revImg_four.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img15 img:hover {
+                     content: url(./images/brandDetails/brandpagebg.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          
+                   .img16 img:hover {
+                     content: url(./images/ambassadorPage/artists/artist-one.jpg);
+                    width: 90vw;
+                      height: 300px;
+          
+                   }
+          .product-text {
+            display: flex;
+           
+          }
+      
+          .product-text p {
+            font-size: 20px;
+          }
+      
+          .ratting {
+            display: flex;
+            font-size: 12px;
+            scale: .9;
+            margin-inline: -15px;
+            margin-top: -1px;
+            margin-left: -8px;
+          }
+      
+          .ratting p {
+            margin-left: 2px;
+            letter-spacing: 1.2px;
+            scale: .9;
+      
+          }
+      
+          .price h6 {
+            font-size: 12px;
+            margin-bottom: 10px;
+            margin-top: 7px;
+            line-height: 12px;
+           
+          }
+              
+        
+               .products-dark {
+                 display: flex;
+                 position: relative;
+        
+               }
+        
+               .right-text-dark p {
+                 color: #FFFFFF;
+                 margin: 3% 27%;
+                 font-family: 'my4thfont';
+                 margin-top: -28px;
+               }
+        
+        
+               .row-dark {
+                
+                 display: block;
+                 transition: all .40s;
+               }
+        
+               .row-dark img {
+            
+                 width: 85vw;
+                 display: block;
+                 object-fit: cover;
+                 object-position: center;
+                 height: 250px;
+                 transition: all .40s;
+               }
+        
+               .product-detail {
+                 font-size: 8px;
+                 margin-top: 8px;
+                 margin-bottom: 10px;
+                 margin-left: 7px;
+               }
+        
+        
+        
+               .product-dark p {
+                 margin-top: 10px;
+        
+               }
+        
+        
+        
+        
+               .ratting-dark {
+        
+                 font-size: 10px;
+        
+               }
+        
+        
+        
+               .price-dark h6 {
+                 font-size: 11px;
+                 margin-bottom: 10px;
+                 margin-top: 7px;
+                 line-height: 11px;
+                 margin-left: 8px;
+               }
+               .product_foot{
+                   font-size: 25px;
+                 
+               }
+         
+  }
