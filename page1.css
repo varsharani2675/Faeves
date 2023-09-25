@@ -299,7 +299,7 @@ font-size: 20px;
             position: relative;
             display: flex;
             top: 227px;
-            left: 24px;
+            left: 0px;
             align-items: center;
             cursor: pointer;
             z-index: 10;
