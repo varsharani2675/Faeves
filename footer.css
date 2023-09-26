@@ -119,7 +119,7 @@
   
   .email-heading {
     font-size: 26px;
-    font-family: "mn-bold";
+    font-family: 'my4thfont';
     text-transform: uppercase;
     margin-bottom: 1%;
   }
@@ -127,7 +127,7 @@
   .email-instruction {
     font-size: 16px;
     text-align: center;
-    font-family: "mn-book";
+    font-family: 'my3rdfont';
     padding-bottom: 1%;
   }
   
@@ -180,7 +180,7 @@
   
   .copyright {
     font-size: 14px;
-    font-family: "h-reg";
+    font-family: 'my5thfont';
     margin-bottom: 3%;
     text-align: center;
   }
@@ -194,7 +194,7 @@
   .privacy-policy {
     padding: 0 10px;
     color: #000;
-    font-family: 'myfirstfont';
+    font-family: 'my5thfont';
   }
   
   .privacy-policy:hover {
@@ -274,50 +274,220 @@
     }
   }
   
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* RESPONSIVE */
+
+  @media only screen and (max-width: 1600px) {
     /* footer */
-  
-    .accordion_mobile{
-      display: none;
-    }
-  
+ 
     .footer-logo-img {
-      width: 130px;
+      width: 160px;
     }
-  
+ 
     .first-col-heading {
-      font-size: 13px;
+      font-size: 22px;
     }
-  
+ 
     .first-col-link {
-      font-size: 9px;
+      font-size: 14px;
       margin: 7px 0;
     }
-  
+ 
     .footer-facebook svg {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
     }
-  
+ 
     .social-link-seperator {
       width: 1px;
       height: 86px;
     }
-  
+ 
     .email-heading {
-      font-size: 18px;
+      font-size: 22px;
     }
-  
+ 
     .email-instruction {
       font-size: 12px;
     }
-  
+ 
     .email-input {
       font-size: 9px;
     }
-  
+ 
     .submit-button {
       font-size: 9px;
     }
-}
-  
+ 
+    .copyright {
+      font-size: 10px;
+    }
+ 
+    .bottom-link {
+      font-size: 11px;
+    }
+ 
+    .accordion_mobile {
+      display: none;
+    }
+  }
+ 
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* footer */
+ 
+    
+ 
+    .footer-logo-img {
+      width: 130px;
+    }
+ 
+    .first-coloumn-heading {
+      font-size: 13px;
+    }
+ 
+    .first-coloumn-link {
+      font-size: 9px;
+      margin: 7px 0;
+    }
+ 
+    .footer-facebook svg {
+      width: 20px;
+      height: 20px;
+    }
+ 
+    .social-link-seperator {
+      width: 1px;
+      height: 86px;
+    }
+ 
+    .email-heading {
+      font-size: 18px;
+    }
+ 
+    .email-instruction {
+      font-size: 12px;
+    }
+ 
+    .email-input {
+      font-size: 9px;
+    }
+ 
+    .submit-button {
+      font-size: 9px;
+    }
+ 
+ 
+  }
+ 
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+ 
+    /* footer */
+   
+ 
+    .footer {
+      padding: 8% 0 3% 0;
+    }
+ 
+    .footer-logo-link {
+      margin: 0 5%;
+    }
+ 
+    .footer-logo-img {
+      width: 90px;
+    }
+ 
+    .footer-seperator span {
+      height: 1px;
+    }
+ 
+    .footer-link-list {
+      flex-direction: row;
+      /* align-items: center; */
+      margin-left: 4px;
+      padding: 5% 12%;
+    }
+ 
+    .footer-facebook {
+      margin: 0 20px;
+    }
+ 
+    .footer-facebook svg {
+      width: 20px;
+      height: 20px;
+    }
+ 
+    .email-heading {
+      font-size: 15px;
+    }
+ 
+    .email-instruction {
+      font-size: 8px;
+    }
+ 
+    .footer-first-coloumn {
+      max-width: 100%;
+      margin: 18px 0;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+ 
+    .first-coloumn-heading {
+      padding: 2% 0;
+      font-size: 12px;
+    }
+ 
+    .first-coloumn-link {
+      font-size: 8px;
+    }
+ 
+    .footer-social-media {
+      padding-bottom: 6%;
+    }
+ 
+    .email-input {
+      width: 180px;
+      height: 35px;
+    }
+ 
+    .submit-button {
+      width: 80px;
+      height: 35px;
+    }
+ 
+    .privacy-policy {
+      font-size: 8px;
+      text-align: center;
+    }
+ 
+    .copyright-container {
+      padding: 5% 0 2% 0;
+    }
+ 
+    .footer_ls_ms {
+      display: none;
+    }
+ 
+    .mobile-footer {
+      display: block;
+    }
+ 
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+ 
+    
+ 
+    
+ 
+   
+ 
+    .social-links {
+      padding-bottom: 35px;
+      display: flex;
+      margin-top: 30px;
+      align-items: center;
+    }
+  }
