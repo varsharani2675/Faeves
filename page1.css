@@ -120,6 +120,7 @@ body{
   justify-content: space-between;
 
 }
+
 .right-text h5{
   font-size: 15px;
 }
@@ -519,15 +520,6 @@ margin-left: 8px;
     
     
     
-     
-    
-    
-    
-      
-   
-    
-      
-  
   
   
   }
@@ -776,12 +768,7 @@ margin-left: 8px;
          
   
     
-     
-    
-    
-     
-    
-     
+ 
    
     
      
@@ -796,11 +783,7 @@ margin-left: 8px;
     
         
           .products {
-            position: relative;
-            
-          
-        
-        
+            position: relative;  
         
           }
         

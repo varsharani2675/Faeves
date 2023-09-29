@@ -23,7 +23,6 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* line-height: 5rem; */
   position: fixed;
   width: 100%;
   height: 7rem;
@@ -102,33 +101,6 @@ img{
   transform-origin: 0% 100%;
 }
 
-@media screen and (max-width:805px){
-  .list{
-      width: 100px;
-      height: 100vh;
-      background-color: #fff;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 4rem;
-      left: 100px;
-      transition: all 1s;
-  }
-
-  #check{
-      display: none;
-  }
-  
-  .checkBtn{
-      display: block;
-  }
-
-  .check:checked~ul{
-      left:0%;
-  }
-
-} 
 
 .right_nav {
   width: 37.5%;
@@ -550,4 +522,535 @@ padding: 11px 32px;
 border-radius: 1px;
 cursor: pointer;
 scale: .7;
+}
+
+
+
+/* responsive css */
+
+/* laptop */
+
+@media only screen and (min-width: 1204px) and (max-width: 1600px){
+  .first-section {
+      align-items: center;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      width: 100vw;
+      overflow: hidden;
+    }
+  
+    .first-section img {
+      position: relative;
+      margin-top: 70px;
+      height: 1;
+    }
+
+
+    /*  tab */
+
+}
+@media only screen and (min-width: 601px) and (max-width: 1201px){
+    .first-section {
+        align-items: center;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100vw;
+        overflow: hidden;
+      }
+    
+      .first-section img {
+        position: relative;
+        margin-top: 70px;
+      
+        width: 400px;
+        height: auto;
+      }
+.nikkie {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.nikkie h1 {
+font-size: 22px;
+justify-content: left;
+position: relative;
+margin: 1px 18%;
+color: #138FE4;
+font-family: 'myfirstfont';
+letter-spacing: -1.2px;
+opacity: 1;
+}
+
+.nikki-nav-icons {
+display: flex;
+position: relative;
+color: black;
+list-style: none;
+flex-direction: row;
+margin-right: 21%;
+font-size: 20px;
+
+}
+
+.nikki-nav-icons li {
+margin: 6px;
+}
+.founder {
+align-items: center;
+margin-top: 1px;
+
+}
+
+.content {
+font-size: 11px;
+margin: 3px 18%;
+color: #000;
+font-family: 'my2ndfont';
+
+}
+
+.text {
+
+color: #000;
+
+margin-top: 10px;
+margin-left: 26%; 
+margin-top: -15px;
+display:flex;
+
+font-size: 11px;
+}
+
+.heading {
+margin-left: 18%;
+margin-top: 2%;
+
+font-size: 15px;
+}
+
+.brand-text {
+margin-top: -2%;
+margin-left: 36%;
+line-height: 1rem;
+font-size: 7px;
+
+
+}
+
+
+/* DARK IMG ND VIDEO SECTION */
+
+.article-dark {
+background-color: #000;
+color: white;
+
+
+}
+.nikkies-dark {
+display: flex;
+
+position: relative;
+justify-content: space-between;
+gap: 2rem;
+padding: 38px;
+margin-left: 5px;
+}
+
+.row-dark_img img {
+display: block;
+width: 100%;
+
+
+
+
+}
+
+
+.nikkie-dark p {
+
+color: #138FE4;
+font-size: 13px;
+margin-top: 15px;
+margin-left: 5px;
+letter-spacing: -0.68px;
+}
+
+.nikkie-details {
+font-family: 'myfirstfont';
+margin-left: 5px;
+line-height: 2;
+font-size: 12px;
+}
+
+.content-dark p {
+font-family: 'myfirstfont';
+color: #FFFFFF;
+margin-left: 5px;
+font-size: 6px;
+line-height: 1.2;
+}
+
+.dark-video {
+position: relative;
+display: block;
+width: 100%;
+}
+
+.dark-video p {
+position: absolute;
+top: 6%;
+left: 5%;
+background-color: #000;
+padding: 6px;
+text-transform: uppercase;
+
+}
+
+.video-dark video {
+
+display: block;
+width: 100%;
+}
+
+/* products dark responsive */
+.container {
+height: auto;
+
+}
+
+.products-dark {
+margin-top: 38px;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+gap: 1rem;
+
+
+}
+
+
+
+
+.row-dark {
+position: relative;
+display: block;
+width: 100%;
+transition: all .40s;
+}
+
+.row-dark img {
+
+width: 100%;
+
+height: 290px;
+object-fit: cover;
+object-position: center;
+transition: all .40s;
+}
+
+.product-detail {
+font-family: 'my6thfont';
+font-size: 11px;
+margin-top: 8px;
+margin-bottom: 10px;
+margin-left: 7px;
+}
+
+.price-dark span {
+border: 1px solid black;
+color: #C1C1C1;
+font-size: 12px;
+}
+
+.product-dark p {
+font-family: 'myfirstfont';
+margin-top: 10px;
+margin-left: 3px;
+}
+
+
+.ratting-dark {
+display: flex;
+font-size: 9px;
+scale: .9;
+margin-inline: -15px;
+margin-top: 7px;
+margin-left: -11px;
+}
+
+.ratting-dark p {
+margin-left: 4px;
+letter-spacing: 1.2px;
+scale: .9;
+
+
+}
+
+.price-dark h6 {
+font-family: 'myfirstfont';
+font-size: 7px;
+margin-bottom: 10px;
+margin-top: 7px;
+line-height: 12px;
+margin-left: 8px;
+}
+
+/* VIEW MORE */
+
+.view-more {
+text-align: center;
+left: 53%;
+margin-top: -40px;
+position: relative;
+}
+}
+
+/* mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 600px){
+   
+    
+  .first-section img {
+    position: relative;
+    margin-top: 70px;
+
+    width: 390px;
+    height: auto;
+    padding-right: 2%;
+  }
+
+ 
+
+  .nikkie h1 {
+    font-size: 12px;
+    justify-content: left;
+    position: relative;
+    margin: 1px 18%;
+    color: #138FE4;
+    font-family: 'myfirstfont';
+    letter-spacing: -1.2px;
+    opacity: 1;
+  }
+
+  .nikki-nav-icons {
+    display: flex;
+    position: relative;
+    color: black;
+    list-style: none;
+    flex-direction: row;
+    margin-right: 21%;
+    font-size: 14px;
+
+  }
+
+  .nikki-nav-icons li {
+    margin: 4px;
+  }
+
+  .founder {
+    align-items: center;
+    margin-top: 1px;
+    
+
+  }
+
+  .content {
+    font-size: 11px;
+    margin: 3px 18%;
+   
+   
+
+  }
+
+  .text {
+
+    color: #000;
+
+    margin-top: 10px;
+    margin-left: 26%;
+    margin-top: -15px;
+    display: flex;
+
+    font-size: 11px;
+  }
+
+  .heading {
+    margin-left: 18%;
+    margin-top: 2%;
+
+    font-size: 8px;
+  }
+
+  .brand-text {
+    margin-top: -2%;
+    margin-left: 36%;
+    line-height: 0.5rem;
+    font-size: 4px;
+
+
+  }
+
+  /* DARK IMG ND VIDEO SECTION */
+
+ 
+  .text-dark p{
+    font-size: 12px;
+  }
+
+  .nikkies-dark {
+    display: block;
+    width: 100%;
+    
+    position: relative;
+   
+    padding: 38px;
+    margin-left: 5px;
+  }
+
+  .row-dark_img img {
+    display: flex;
+    width: 100%;
+
+
+
+
+  }
+
+
+  .nikkie-dark p {
+
+    color: #138FE4;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 5px;
+    letter-spacing: -0.68px;
+  }
+
+  .nikkie-details {
+    font-family: 'myfirstfont';
+    margin-left: 5px;
+    line-height: 2;
+    font-size: 12px;
+  }
+
+  .content-dark p {
+    font-family: 'myfirstfont';
+    color: #FFFFFF;
+    margin-left: 5px;
+    font-size: 6px;
+    line-height: 1.2;
+  }
+
+  .dark-video {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .dark-video p {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    background-color: #000;
+    padding: 6px;
+    text-transform: uppercase;
+
+  }
+
+  .video-dark video {
+    padding-top: 7px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* products dark responsive */
+  
+
+  .products-dark {
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    
+
+
+  }
+
+  .row-dark {
+    position: relative;
+    display: block;
+    width: 100%;
+    transition: all .40s;
+  }
+
+  .row-dark img {
+
+    width: 85%;
+
+    height: 290px;
+    object-fit: cover;
+    object-position: center;
+    transition: all .40s;
+  }
+
+  .product-detail {
+    font-family: 'my6thfont';
+    font-size: 11px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+  }
+
+  .price-dark span {
+    border: 1px solid black;
+    color: #C1C1C1;
+    font-size: 12px;
+  }
+
+  .product-dark p {
+    font-family: 'myfirstfont';
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+
+
+  .ratting-dark {
+    display: flex;
+    font-size: 9px;
+    scale: .9;
+    margin-inline: -15px;
+    margin-top: 7px;
+    margin-left: -11px;
+  }
+
+  .ratting-dark p {
+    margin-left: 4px;
+    letter-spacing: 1.2px;
+    scale: .9;
+
+
+  }
+
+  .price-dark h6 {
+    font-family: 'myfirstfont';
+    font-size: 7px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    line-height: 12px;
+    margin-left: 8px;
+  }
+
+  /* VIEW MORE */
+
+  .view-more {
+    text-align: center;
+    left: -6%;
+    margin-top: -40px;
+    position: relative;
+  }
+
 }
