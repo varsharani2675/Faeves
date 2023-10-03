@@ -25,11 +25,12 @@ video{
   font-family: 'myfirstfont';
   
 }
-.video-text img{
+
+/* .video-text img{
   height: 49px;
   margin-bottom: 24px;
   margin-top: -15px;
-}
+} */
 .video-text h2{
 font-size: 45px;
 font-weight: 50;
